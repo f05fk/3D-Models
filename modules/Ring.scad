@@ -18,35 +18,14 @@
 \* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 $fn = 120;
 
-use <../modules/Ring.scad>;
+Ring(h = 10, dout = 20, din = 10, center = true);
 
-FlowerOfLife(height = 3, size = 30, n = 3);
-
-module FlowerOfLife(height, size, n = 3, ring = true, center = false) {
-    radius = size;
-    cross = size * sqrt(3) / 2;
-
-    // draw the ring
-    if (ring == true) {
-        Ring(h = height, dout = 2 * (n + 0.15) * radius, din = 2 * n * radius, center = center);
-    }
-
-    // draw the lenses
-    for (alpha = [-60, 0, 60]) {
-        rotate(alpha)
-        // there are 2 * n + 1 rows
-        for (i = [-n:1:n]) {
-            // there are 2 * n - abs(i) lenses in a row
-            j = n - abs(i) / 2 - 0.5;
-            for (k = [-j:1:j]) {
-                // draw a single lens
-                intersection() {
-                    translate([k * radius, (i + 1) * cross, 0])
-                        cylinder(h = height, r = radius, center = center);
-                    translate([k * radius, (i - 1) * cross, 0])
-                        cylinder(h = height, r = radius, center = center);
-                }
-            }
-        }
+module Ring(h, dout, din, center = false) {
+    translate(center == true ? [0, 0, 0] : [0, 0, h / 2])
+    difference() {
+        // cylinder
+        cylinder(h = h, d = dout, center = true);
+        // hole
+        cylinder(h = h + 2, d = din, center = true);
     }
 }

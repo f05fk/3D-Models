@@ -18,7 +18,7 @@
 \* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 $fn = 120;
 
-include <../functions/constants.scad>;
+include <../functions/constants.scad>
 use <../modules/PrismaChamfered.scad>
 
 UNIT = 30;

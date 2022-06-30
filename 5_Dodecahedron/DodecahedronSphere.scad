@@ -17,7 +17,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later                             *
 \* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-include <../functions/constants.scad>;
+include <../functions/constants.scad>
 
 scale(20) DodecahedronSphere();
 

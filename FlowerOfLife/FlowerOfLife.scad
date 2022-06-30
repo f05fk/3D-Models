@@ -18,7 +18,7 @@
 \* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 $fn = 120;
 
-use <../modules/Ring.scad>;
+use <../modules/Ring.scad>
 
 FlowerOfLife(height = 3, size = 30, n = 3);
 

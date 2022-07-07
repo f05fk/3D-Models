@@ -25,7 +25,7 @@ UNIT = 30;
 // the height (mm)
 HEIGHT = 5;
 // shrink by (mm)
-SHRINK = 0.1;
+SHRINK = 0.05;
 // chamfer (mm) of the prisma
 CHAMFER = 0.3;
 // the radius (mm; before scaling) of the tabs and blanks

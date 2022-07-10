@@ -1,4 +1,4 @@
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\
  * Copyright (C) Claus Schrammel <claus@f05fk.net>                       *
  *                                                                       *
  * This program is free software: you can redistribute it and/or modify  *

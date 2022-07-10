@@ -1,4 +1,4 @@
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\
  * Copyright (C) Claus Schrammel <claus@f05fk.net>                       *
  *                                                                       *
  * This program is free software: you can redistribute it and/or modify  *
@@ -35,5 +35,4 @@ difference() {
 //    translate([ 10, 20, -2]) scale([10, 30, 1]) cylinder(h = 7, d = 1);
 //    translate([ 10, 60, -2]) scale([10, 30, 1]) cylinder(h = 7, d = 1);
 //    translate([ 25, 40, -2]) scale([10, 30, 1]) cylinder(h = 7, d = 1);
-
 }

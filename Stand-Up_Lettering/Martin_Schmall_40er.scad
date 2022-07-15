@@ -17,21 +17,20 @@
  * SPDX-License-Identifier: GPL-3.0-or-later                             *
 \* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-color("lightgrey")
+*color("lightgrey")
 linear_extrude(18)
 import("Martin_Schmall_40er_Mountains.svg", convexity=10);
 
-color("green")
+*color("lightgreen")
 linear_extrude(25)
 import("Martin_Schmall_40er_40.svg", convexity=10);
 
-color("grey")
+color("white")
 linear_extrude(25)
 import("Martin_Schmall_40er_Martin+Wheel.svg", convexity=10);
 
-color("grey")
+color("white")
 translate([0, 3, 2.65])
 rotate(90, [1, 0, 0])
 linear_extrude(3)
-import("Martin_Schmall_40er_Copyright.svg", convexity=10);
-
+import("Martin_Schmall_40er_Claus.svg", convexity=10);
